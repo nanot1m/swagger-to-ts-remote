@@ -1,0 +1,22 @@
+{
+  "name": "@t1mmaas/swagger-to-ts",
+  "version": "1.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "swagger-to-ts-remote --url=\"https://travel-hotels-api-testing.n.yandex-team.ru/v2/api-docs?group=1.%20default\" --nameSpace=TravelHotelsApi --output=test/generated"
+  },
+  "bin": {
+    "swagger-to-ts-remote": "bin/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {
+    "@manifoldco/swagger-to-ts": "^1.1.3",
+    "got": "^9.6.0",
+    "mkdirp": "^0.5.1",
+    "yargs": "^13.2.2"
+  }
+}
