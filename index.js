@@ -5,13 +5,6 @@ const path = require("path");
 const { promisify } = require("util");
 const mkdirp = promisify(require("mkdirp"));
 
-const SPEC_URL =
-  "https://travel-hotels-api-testing.n.yandex-team.ru/v2/api-docs?group=1.%20default";
-
-const OUTPUT = "./generated";
-
-const NAME = "TravelHotelsApi";
-
 async function getSpec(specUrl) {
   const { body } = await got(specUrl, {
     rejectUnauthorized: false,
